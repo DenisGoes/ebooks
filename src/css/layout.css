@@ -1,0 +1,465 @@
+body,
+html {
+  background-color: var(--white-fundo);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg, white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.301);
+}
+
+.navegation-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.2rem;
+  padding-block: 0.2rem;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.img-logo {
+  display: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.button-search,
+.button-profile,
+.button-cart {
+  outline: 0 !important;
+  border: 0 !important;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  border-radius: 0.6rem;
+  padding: clamp(0.3rem, 1.5vw, var(--btn-padding-y))
+    clamp(0.5rem, 2vw, var(--btn-padding-x));
+  flex: 0 1 auto;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: clamp(14px, 5vw, 24px);
+}
+.user-info {
+  display: none;
+}
+
+main section:not(:first-of-type) {
+  margin-block: var(--space-section);
+  padding-inline: var(--space-sm);
+}
+
+.hero-section {
+  display: grid;
+  position: relative;
+}
+
+picture,
+picture img {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.7);
+}
+
+.contain-hero {
+  grid-area: 1 / 1;
+  z-index: 1;
+  padding: clamp(1rem, 4vw, 2rem);
+  max-width: min(90%, 32rem);
+  align-self: center;
+}
+
+.contain-hero p {
+  margin: 0.5rem 0 1rem;
+  color: var(--white);
+}
+
+.container-button {
+  display: flex;
+  width: 100%;
+  gap: clamp(0.4rem, 2vw, 0.8rem);
+}
+
+.container-button button {
+  flex: 1 1 0;
+  min-width: 0; /* permite encolher de verdade */
+  padding: clamp(0.5rem, 2vw, 0.9rem) clamp(0.6rem, 3vw, 1.4rem);
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  border-radius: 0.7rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-contain-hero-um {
+  background-color: var(--btn-primary);
+  color: var(--black);
+}
+
+.btn-contain-hero-dois {
+  background-color: var(--btn-secundary);
+  color: var(--white);
+}
+
+.btn-contain-hero-um:hover {
+  background-color: var(--btn-secundary);
+  color: var(--white);
+  cursor: pointer;
+}
+.btn-contain-hero-dois:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.programacao-books .header-books,
+.ciberseguranca-books .header-books,
+.redes-books .header-books,
+.pesquisas-books .header-books,
+.artigos-books .header-books,
+.destaques-books .header-books,
+.lifestyle-books .header-books,
+.powerlifting-books .header-books,
+.performance_disciplina-books .header-books {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-block);
+  padding-inline: var(--space-sm);
+}
+.contain-ebooks {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 1rem) / 2);
+  gap: var(--space-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.ebook-card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-inset);
+}
+
+.contain-ebooks .ebook-card:nth-of-type(n + 5) {
+  display: none;
+}
+
+.ebooks-img {
+  width: 3rem;
+  height: auto;
+  display: block;
+}
+
+.description-books {
+  margin-top: var(--space-xs);
+}
+
+.ebook-title h3 {
+  margin-block: var(--space-xs);
+}
+
+.ebook-autor {
+  color: #555;
+  text-decoration: none;
+}
+
+.ebook-preco {
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+.ebook-misterioso {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.ebook-misterioso h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+  line-height: 1.3;
+}
+.criador h2 {
+  text-align: center;
+}
+
+.contain-criador {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(0.6rem, 4vw, 1.5rem);
+  padding: var(--space-inset);
+}
+
+.img-criador {
+  border-radius: 50%;
+  width: clamp(5rem, 25vw, 15rem);
+  flex: 0 0 auto;
+}
+
+.contain-criador p {
+  margin: 0;
+  flex: 1 1 0;
+  min-width: 0;
+  line-height: 1.5;
+}
+
+.footer-devpower {
+  background-color: var(--black-soft);
+  color: var(--white);
+  padding: var(--space-lg) var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.brand-footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.brand-name {
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.brand-slogan {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.footer-section input {
+  display: none;
+}
+
+.footer-title {
+  display: block;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.footer-title::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+
+.footer-section input:checked + .footer-title::after {
+  transform: rotate(45deg);
+}
+
+.footer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.footer-section input:checked ~ .footer-content {
+  max-height: 300px;
+}
+
+.footer-content p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.icons-footer {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.icons-footer img {
+  width: 28px;
+  height: 28px;
+}
+
+.autoral-footer {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .contain-ebooks {
+    grid-auto-columns: calc((100% - 2rem) / 3);
+  }
+
+  .contain-ebooks .ebook-card:nth-of-type(n + 5) {
+    display: flex;
+  }
+  .ebook-misterioso {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navegation-contain {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    gap: 1rem;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .img-logo {
+    display: flex;
+  }
+  .center-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .center-group .right {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+  .button-container {
+    display: flex;
+    gap: 3rem;
+  }
+  .button-profile {
+    display: flex;
+    align-items: center; 
+    gap: 0.4rem;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+  .button-profile svg {
+    margin-top: 2px; 
+  }
+  .button-profile .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0;
+    padding: 0;
+  }
+  .button-profile .user-info span,
+  .button-profile .user-info a {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .button-profile .user-info a {
+    pointer-events: auto;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .button-profile .user-info span {
+    font-weight: 500;
+  }
+
+  .button-cart {
+    display: flex;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+  }
+  picture img {
+    height: 680px; 
+    object-fit: cover; 
+  }
+  .contain-ebooks {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
+    grid-auto-columns: auto;
+    overflow-x: hidden;
+    scroll-snap-type: none;
+  }
+  .ebooks-img {
+    width: clamp(90px, 10vw, 100px);
+    height: auto;
+  }
+  .ebook-misterioso {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-devpower {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(5, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .brand-footer {
+    text-align: left;
+  }
+
+  .footer-title {
+    cursor: default;
+    border: none;
+    padding: 0 0 0.6rem;
+  }
+
+  .footer-title::after {
+    display: none;
+  }
+
+  .footer-content {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .autoral-footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .autoral-footer p {
+    font-size: var(--fs-p);
+  }
+}

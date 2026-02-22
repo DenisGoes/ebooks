@@ -1,0 +1,1364 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denis Goes | MLP</title>
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/root.css" />
+    <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/layout.css" />
+    <link rel="stylesheet" href="/src/css/components/inputs.css" />
+    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link rel="shortcut icon" href="/src/img/favi.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navegation-contain">
+        <div class="left">
+          <!-- Menu hamburguer From Uiverse.io by ahmedyasserdev -->
+          <input id="burger-checkbox" type="checkbox" />
+          <label class="burger" for="burger-checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <!-- <img class="img-logo" src="src/img/logo.webp" alt=""> -->
+        </div>
+        <!-- From Uiverse.io by Shaidend -->
+        <div class="center-group">
+          <div class="InputContainer">
+            <input
+              placeholder="Search"
+              id="input-pesquisa"
+              class="input-pesquisa"
+              name="text"
+              type="text"
+            />
+            <label class="labelforsearch" for="input">
+              <svg class="searchIcon" viewBox="0 0 512 512">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <div class="right">
+            <div class="button-container">
+              <button class="button-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  aria-hidden="true"
+                  viewbox="0 0 24 24"
+                  stroke-width="2"
+                  fill="none"
+                  stroke="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </button>
+              <button class="button-profile">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewbox="0 0 24 24"
+                  stroke-width="0"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"
+                  ></path>
+                </svg>
+
+                <div class="user-info">
+                  <span>Boas-vindas</span>
+                  <a href="/src/pages/login.html">Entre ou cadastre-se</a>
+                </div>
+              </button>
+              <a href="/src/pages/carrinho.html">
+                <button class="button-cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    viewbox="0 0 24 24"
+                    stroke-width="2"
+                    fill="none"
+                    stroke="currentColor"
+                    class="icon"
+                  >
+                    <circle r="1" cy="21" cx="9"></circle>
+                    <circle r="1" cy="21" cx="20"></circle>
+                    <path
+                      d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+              <!-- From Uiverse.io by sudhucodes -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <picture>
+          <source
+            srcset="/src/img/hero-banner-desktop.webp"
+            media="(min-width: 1025px)"
+          />
+          <source
+            srcset="/src/img/hero-banner-tablet.webp"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <img src="/src/img/hero-banner-mobile.webp" alt="Banner Hero" />
+        </picture>
+
+        <div class="contain-hero">
+          <h1>
+            Domine Tecnologia com Método <br />
+            Não com Sorte
+          </h1>
+          <p>
+            Ebooks e guias práticos sobre programação, cibersegurança e
+            desenvolvimento pessoal
+          </p>
+          <div class="container-button">
+            <button class="btn-contain-hero-um">Ebooks em Destaque</button>
+            <button class="btn-contain-hero-dois">Ver Método MLP</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="programacao-books" id="">
+        <div class="header-books">
+          <h2>Programação</h2>
+          <a class="ver-todos" href="/src/pages/programacao.html">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ciberseguranca-books secao" id="Programacao">
+        <div class="header-books">
+          <h2>Cibersegurança</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="redes-books secao" id="powerlifting">
+        <div class="header-books">
+          <h2>Redes</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pesquisas-books secao" id="lifestyle">
+        <div class="header-books">
+          <h2>Pesquisas Cientificas</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="artigos-books secao" id="pesquisas-artigos">
+        <div class="header-books">
+          <h2>Artigos cientificos</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destaques-books">
+        <div class="header-books">
+          <h2>Destaques</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lifestyle-books">
+        <div class="header-books">
+          <h2>powerlifting</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="powerlifting-books">
+        <div class="header-books">
+          <h2>lifestyle</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="performance_disciplina-books">
+        <div class="header-books">
+          <h2>Performance & Disciplina</h2>
+          <a class="ver-todos" href="">ver todos</a>
+        </div>
+
+        <div class="contain-ebooks">
+          <!-- Card do ebook -->
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+          <div class="ebook-card">
+            <!-- capa do livro -->
+            <a href="/src/pages/ebook.html">
+              <img
+                class="ebooks-img"
+                src="/src/img/ebook-misterioso.webp"
+                alt="Capa do ebook"
+              />
+            </a>
+
+            <div class="description-books">
+              <a href="/src/pages/ebook.html" class="ebook-title">
+                <h3>Nome ebook</h3>
+              </a>
+              <a href="/src/pages/autor.html" class="ebook-autor">Autor(a)</a>
+              <p class="ebook-preco">R$ 00,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ebook-misterioso">
+        <h2>Resgate aqui seu ebook misterioso</h2>
+
+        <form class="input-group">
+          <input
+            type="email"
+            class="input-resgate"
+            placeholder="Digite seu e-mail"
+            autocomplete="off"
+            required
+          />
+          <button class="button--submit" type="submit">Resgatar</button>
+        </form>
+      </section>
+
+      <section class="criador" id="criador">
+        <h2>criador</h2>
+        <div class="contain-criador">
+          <a href="/src/pages/autor.html">
+            <img
+              class="img-criador"
+              src="src/img/criador-misterioso.webp"
+              alt=""
+            />
+          </a>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+            deserunt, officiis quisquam animi, repudiandae porro, consequatur
+            deleniti eius culpa reprehenderit libero? Adipisci ipsam quidem
+            dolore id repellat tenetur hic sunt.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer-devpower">
+        <div class="brand-footer">
+          <span class="brand-name">DevPower Books</span>
+          <span class="brand-slogan">Sua ideia, nossa tecnologia</span>
+        </div>
+
+ 
+        <div class="footer-section">
+          <input type="checkbox" id="devpower-toggle" />
+          <label for="devpower-toggle" class="footer-title">DevPower</label>
+          <div class="footer-content">
+            <p>Sobre o DevPower</p>
+            <p>Compromissos</p>
+            <p>Contato</p>
+          </div>
+        </div>
+
+ 
+        <div class="footer-section">
+          <input type="checkbox" id="conteudo-toggle" />
+          <label for="conteudo-toggle" class="footer-title">Conteúdo</label>
+          <div class="footer-content">
+            <p>Ebooks</p>
+            <p>Conteúdo Gratuito</p>
+            <p>Roadmaps</p>
+            <p>Blog</p>
+          </div>
+        </div>
+
+
+        <div class="footer-section">
+          <input type="checkbox" id="suporte-toggle" />
+          <label for="suporte-toggle" class="footer-title">Suporte</label>
+          <div class="footer-content">
+            <p>Central de Ajuda</p>
+            <p>FAQ</p>
+            <p>Formas de Pagamento</p>
+            <p>Política de Reembolso</p>
+          </div>
+        </div>
+
+
+        <div class="footer-section">
+          <input type="checkbox" id="legal-toggle" />
+          <label for="legal-toggle" class="footer-title">Legal</label>
+          <div class="footer-content">
+            <p>Termos de uso</p>
+            <p>Política de privacidade</p>
+            <p>Cookies</p>
+            <p>Direitos autorais</p>
+          </div>
+        </div>
+
+   
+        <div class="footer-section">
+          <input type="checkbox" id="pagamento-toggle" />
+          <label for="pagamento-toggle" class="footer-title">Pagamentos</label>
+          <div class="footer-content icons-footer">
+            <img
+              src="/src/img/iconeFormasPagamentos/icon-cartao.svg"
+              alt="Pagamento"
+            />
+            <img
+              src="/src/img/iconeFormasPagamentos/icon-codigo-barra.svg"
+              alt="Pagamento"
+            />
+            <img
+              src="/src/img/iconeFormasPagamentos/icon-pix.svg"
+              alt="Pagamento"
+            />
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <input type="checkbox" id="social-toggle" />
+          <label for="social-toggle" class="footer-title">Social</label>
+          <div class="footer-content icons-footer">
+            <a
+              href="https://www.linkedin.com/in/denis-goes-9163993a9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/src/img/iconesRedesSociais/icon-linkedin.svg"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/DenisGoes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/src/img/iconesRedesSociais/icon-github.svg"
+                alt="Github"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/dgoess__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/src/img/iconesRedesSociais/icon-instagram.svg"
+                alt="Rede social"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="autoral-footer">
+          <p>&copy; 2026 | Denis Goes | MLP</p>
+          <p>Todos os direitos reservados</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

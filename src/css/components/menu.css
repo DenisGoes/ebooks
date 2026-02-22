@@ -1,0 +1,36 @@
+/* menu hamburguer pagina index.html */
+#burger-checkbox {
+  display: none;
+}
+
+#burger-checkbox:checked + .burger span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#burger-checkbox:checked + .burger span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+#burger-checkbox:checked + .burger span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.burger {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1000;
+  align-items: center;
+  padding: clamp(0.2rem, 1vw, 0.4rem);
+}
+
+.burger span {
+  width: clamp(18px, 6vw, 25px);
+  height: clamp(1.5px, 0.5vw, 2px);
+  margin: clamp(4px, 1.2vw, 6px) 0;
+  background: #333;
+  display: block;
+  transition:
+    transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.3s ease;
+}

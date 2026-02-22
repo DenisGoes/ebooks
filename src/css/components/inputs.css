@@ -1,0 +1,91 @@
+/* input pesquisa pagina index.html -- mobile e tablet none */
+/* From Uiverse.io by Shaidend */
+.InputContainer {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .button-search {
+    display: none;
+  }
+  /* input pesquisa pagina index.html -- mobile e tablet none */
+  /* From Uiverse.io by Shaidend */
+  .InputContainer {
+    width: 100%;
+    max-width: 700px;
+    height: 42px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.295);
+  }
+  .input-pesquisa {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+  }
+
+  .labelforsearch {
+    cursor: text;
+    padding: 0px 12px;
+  }
+
+  .searchIcon {
+    width: 13px;
+  }
+  .searchIcon path {
+    fill: rgb(114, 114, 114);
+  }
+}
+
+/* Input resgate seu ebooks pagina index.html */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+}
+
+.input-resgate {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--btn-input);
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.25s ease;
+}
+
+.button--submit:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.input-resgate:focus {
+  outline: none;
+  border-color: #3898ec;
+}

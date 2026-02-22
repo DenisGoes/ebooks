@@ -1,0 +1,39 @@
+:root {
+  /* Color´s */
+  --white: #ffffff;
+  --white-fundo: #eef1f4;
+  --black: #000000;
+  --black-soft: rgba(7, 6, 6, 0.726);
+  --bg-main: #e3d8c8; /* bege claro (fundo geral) */
+  --text-main: #3e2f23; /* Headings */
+  --text-muted: #573e24; /*Textos secundarios*/
+  --btn-primary: #ffffff;
+  --btn-secundary: rgba(28, 28, 218, 0.692);
+  --btn-input: rgb(28, 28, 218);
+  --btn-primary-hover: rgb(60, 60, 240);
+  --btn-primary-text: #fffaf3;
+
+  /* Tamanho de Fontes*/
+  --fs-h1: clamp(0.8rem, 4vw + 0.3rem, 2.3rem);
+  --fs-h2: clamp(0.5rem, 3vw + 0.6rem, 1.5rem);
+  --fs-h3: clamp(0.5rem, 3vw + 0.4, 1.3rem);
+  --fs-p: clamp(0.5rem, 2vw + 0.4rem, 1rem);
+  --fs-a: clamp(0.5rem, 3vw + 0.3rem, 1rem);
+
+  /* Botões */
+  --fs-btn: clamp(0rem, 0.3vw + 0.8rem, 1.1rem);
+  --btn-padding-y: clamp(0rem, 0.5vw, 0.9rem);
+  --btn-padding-x: clamp(1rem, 1vw, 1.4rem);
+
+  /* Espaços gerais */
+  --space-xs: clamp(0.75rem, 1.5vw, 1rem);
+  --space-sm: clamp(1rem, 2vw, 1.5rem);
+  --space-md: clamp(1.5rem, 3vw, 2.5rem);
+  --space-lg: clamp(2.5rem, 5vw, 4rem);
+  --space-xl: clamp(3.5rem, 7vw, 7rem);
+
+  --space-section: var(--space-xl); /* distância entre sections */
+  --space-block: var(--space-xs); /* título conteúdo */
+  --space-gap: var(--space-md); /* entre cards */
+  --space-inset: var(--space-xs); /* padding interno */
+}
